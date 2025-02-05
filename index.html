@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neutrino Astrophysics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f8f5f2]">
+     <!-- Navbar -->
+     <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button id="menu-toggle" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex shrink-0 items-center">
+                        <img class="h-8 w-auto" src="https://www.prl.res.in/prl-eng/sites/default/files/images/prl_logo/prl-logo-200x200.png" alt="PRL">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                            <a href="schedule.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
+                            <a href="speakers.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                            <a href="participants.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
+                            <a href="venue.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <a href="index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+                <a href="schedule.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
+                <a href="speakers.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                <a href="participants.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
+                <a href="venue.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <div class="py-5 w-full">
+        <h2 class="text-center text-[#5c4033] text-4xl font-bold mb-6">Neutrino Astrophysics</h2>
+
+        <div class="flex flex-col items-center w-full">
+
+            <!-- Day 1 -->
+            <div class="bg-white shadow-lg p-6 w-full">
+                <h3 class="text-center text-2xl text-[#5c4033] font-bold mb-4">Day 1: 19th March</h3>
+                <div class="w-full">
+                    <!-- Schedule entries for Day 1 -->
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">9:45 AM - 10:15 AM</span>
+                        <span>Inauguration</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">10:15 AM - 11:00 AM</span>
+                        <span class="mx-2">☕ High Tea + Photo</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">11:00 AM - 1:00 PM</span>
+                        <span>Session 1</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">1:00 PM - 2:00 PM</span>
+                        <span class="mx-2">🍽️ Lunch Break</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">2:00 PM - 3:30 PM</span>
+                        <span>Session 2</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">3:30 PM - 4:00 PM</span>
+                        <span class="mx-2">☕ Tea + Biscuits</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">4:00 PM - 5:30 PM</span>
+                        <span>Session 3</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">5:30 PM - 6:00 PM</span>
+                        <span class="mx-2">🍪 Tea + Snacks</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="bg-white shadow-lg p-6 w-full">
+                <h3 class="text-center text-2xl text-[#5c4033] font-bold mb-4">Day 2: 20th March</h3>
+                <div class="w-full">
+                    <!-- Schedule entries for Day 2 -->
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">9:30 AM - 11:00 AM</span>
+                        <span>Session 5</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">11:00 AM - 11:30 AM</span>
+                        <span class="mx-2">☕ Tea + Biscuits</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">11:30 AM - 1:00 PM</span>
+                        <span>Session 6</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">1:00 PM - 2:00 PM</span>
+                        <span class="mx-2">🍽️ Lunch Break</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">2:00 PM - 3:30 PM</span>
+                        <span>Session 7</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">3:30 PM - 4:00 PM</span>
+                        <span class="mx-2">☕ Tea + Biscuits</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">4:00 PM - 5:30 PM</span>
+                        <span>Session 8</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">5:30 PM - 6:00 PM</span>
+                        <span class="mx-2">🍪 Tea + Snacks</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">6:00 PM - 7:00 PM</span>
+                        <span>Session 9</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Details -->
+            <div class="bg-white shadow-lg p-6 w-full">
+                <h3 class="text-center text-2xl text-[#5c4033] font-bold mb-4">Day 3: 21st March</h3>
+                <div class="w-full">
+                    <!-- Schedule entries for Day 3 -->
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">9:30 AM - 11:00 AM</span>
+                        <span>Session 10</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">11:00 AM - 11:30 AM</span>
+                        <span class="mx-2">☕ Tea + Biscuits</span>
+                    </div>
+                    <div class="grid grid-cols-2 py-3 px-6 bg-[#f7d154] text-center">
+                        <span class="text-[#8b5a2b] font-bold">11:30 AM - 1:00 PM</span>
+                        <span>Session 11</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                        <span class="text-[#8b5a2b]">1:00 PM - 2:00 PM</span>
+                        <span class="mx-2">🍽️ Lunch</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Programme and Planning Details -->
+            <div class="bg-white shadow-lg p-6 w-full">
+                <h4 class="text-center text-2xl text-[#5c4033] font-bold mb-4">Programme and Planning</h4>
+                <div class="w-full">
+                    <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                        <span class="text-[#8b5a2b] font-bold">1. Prof. Srubabati Goswami</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] text-center">
+                        <span class="text-[#8b5a2b]">2. Prof. Namit Mahajan</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                        <span class="text-[#8b5a2b] font-bold">3. Prof. Partha Konar</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] text-center">
+                        <span class="text-[#8b5a2b]">4. Dr. Ketan M Patel</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                        <span class="text-[#8b5a2b] font-bold">5. Dr. Satyajit Seth</span>
+                    </div>
+                    <div class="py-3 px-6 bg-[#ffe599] text-center">
+                        <span class="text-[#8b5a2b]">6. Dr. Animesh Chatterjee</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Organization -->
+            <div class="bg-white shadow-lg p-6 w-full">
+                <h4 class="text-center text-2xl text-[#5c4033] font-bold mb-4">Local Organization</h4>
+                <div class="w-full">
+                    <div class="w-full">
+                        <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                            <span class="text-[#8b5a2b] font-bold">
+                                <p>1. Prof. Srubabati Goswami</p>
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#ffe599] text-center">
+                            <span class="text-[#8b5a2b]">
+                                <p>2. Prof. Namit Mahajan</p>
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                            <span class="text-[#8b5a2b] font-bold">
+                                <p>3. Dr. Ketan M Patel</p>
+
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#ffe599] text-center">
+                            <span class="text-[#8b5a2b]">                    <p>4. Mr. Rikin Kuntar</p>
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                            <span class="text-[#8b5a2b] font-bold">                    <p>5. Hintal Dave</p>
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#ffe599] text-center">
+                            <span class="text-[#8b5a2b]">                    <p>6. Dr. Supriya Pan</p>
+                            </span>
+                        </div>
+                        <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                            <span class="text-[#8b5a2b] font-bold">                                    <p>7. Ms. Richa Prashant Kumar</p>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
