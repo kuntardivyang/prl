@@ -30,6 +30,8 @@
                         <a href="index.html">
                             <img class="h-8 w-auto" src="https://www.prl.res.in/prl-eng/sites/default/files/images/prl_logo/prl-logo-200x200.png" alt="PRL">
                         </a>
+              <h2 class="rounded-md px-3 py-2 text-sm font-medium text-white">PRL</h2>
+
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
@@ -55,12 +57,15 @@
     </nav>
 
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("transition-all");
+          menu.classList.toggle("duration-500");
+          menu.classList.toggle("ease-in-out");
+          menu.classList.toggle("opacity-100");
         });
-    </script>
-
+      </script>
     
     <!-- Hero Section -->
     <div class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('https://www.prl.res.in/prl-eng/sites/default/files/images/gallery/PRL-Ahmedabad.jpg');">
